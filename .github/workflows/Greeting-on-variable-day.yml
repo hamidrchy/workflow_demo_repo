@@ -1,7 +1,7 @@
 name: Greeting on variable day
 
 on:
-  workflow_dispatch
+  push
 
 env:
   DAY_OF_WEEK: Monday
@@ -14,7 +14,7 @@ jobs:
       Inside_Job: inside___job
     steps:
       - name: "Say Hello Mona it's Monday"
-        run: echo "$Greeting $First_Name. Today is $DAY_OF_WEEK! + $BEFORE_JOBS + $Inside_Job +$Inside_steps + NEW_VAR_1"
+        run: echo "$Greeting $First_Name. Today is $DAY_OF_WEEK! + $BEFORE_JOBS + $Inside_Job +$Inside_steps + NEW_VAR_2"
         env:
           First_Name: Mona
           Inside_steps: Inside_____steps
