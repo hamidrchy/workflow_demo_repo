@@ -5,14 +5,16 @@ on:
 
 env:
   DAY_OF_WEEK: Monday
-
+  BEFORE_JOBS: before___job
 jobs:
   greeting_job:
     runs-on: ubuntu-latest
     env:
       Greeting: Hello
+      Inside_Job: inside___job
     steps:
       - name: "Say Hello Mona it's Monday"
-        run: echo "$Greeting $First_Name. Today is $DAY_OF_WEEK!"
+        run: echo "$Greeting $First_Name. Today is $DAY_OF_WEEK! +$before___job + $inside___job +$Inside_____steps"
         env:
           First_Name: Mona
+          Inside_steps: Inside_____steps
