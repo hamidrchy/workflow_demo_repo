@@ -14,7 +14,7 @@ jobs:
       Inside_Job: inside___job
     steps:
       - name: "Say Hello Mona it's Monday"
-        run: echo "$Greeting $First_Name. Today is $DAY_OF_WEEK! +$before___job + $inside___job +$Inside_____steps"
+        run: echo "$Greeting $First_Name. Today is $DAY_OF_WEEK! + $BEFORE_JOBS + $Inside_Job +$Inside_steps"
         env:
           First_Name: Mona
           Inside_steps: Inside_____steps
